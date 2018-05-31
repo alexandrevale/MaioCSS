@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
 	<title>28/30</title>
@@ -29,6 +29,14 @@
 			background-size: cover;
 			filter: url(#duotone);
 		}
+
+		h1, 
+		p{
+			margin: 0;
+			padding: 15px;
+			text-align: center;
+		}
+
 		.container-original{
 			background-image: url(img/road.jpg);
 			place-self: center;
@@ -42,10 +50,12 @@
 		<svg class="duotone-filter" xmls="http://www.w3.org/2000/svg">
 			<filter id="duotone">
 				<feColorMatrix type="matrix" result="gray" 
-					values="1 0 0 0 0 
-							1 0 0 0 0 
-							1 0 0 0 0 
-							0 0 0 1 0">
+					values= "
+								1 0 0 0 0 
+								1 0 0 0 0 
+								1 0 0 0 0 
+								0 0 0 1 0
+							">
 						
 				</feColorMatrix>
 				<feComponentTransfer color-interpolation-filters="sRGB" result="duotone">
@@ -56,7 +66,10 @@
 				</feComponentTransfer>
 			</filter>
 		</svg>
-		<div class="container-duotone"></div>	
+		<div class="container-duotone">
+			<h1>Efeito Duotone</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat ad beatae ducimus aliquid dolore. Repellat obcaecati dolorem quidem sequi sed esse dolor dignissimos deleniti nostrum vel! Mollitia culpa, qui distinctio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quisquam dolorum debitis quas delectus ipsum assumenda odit dolor eius, maxime consectetur facere culpa, illo sunt alias magnam itaque doloribus pariatur.</p>
+		</div>	
 
 		<div class="container-original"></div>
 </body>
