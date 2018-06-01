@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>04/30 - Links</title>
+	<style>
+		body{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			font-size: 30px;
+		}
+
+		a::before{
+			content: "";
+			background-image: url(img/gears.svg);
+			background-color: #2c3e50;
+			background-size: cover;
+			display: inline-block;
+			margin-right: .5rem;
+			height: 30px;
+			width: 30px;
+			color: #ecf0f1;
+			transition: all .5s ease-in-out;
+		}
+
+		a,
+		a:visited{
+			width: 200px;
+			background-color: #2c3e50;
+			color: #ecf0f1;
+			border-radius: 50px;
+			text-decoration: none;
+			padding: 1rem 1.5rem;
+			cursor: pointer;
+			transition: all .5s ease-in-out;
+		}
+
+		a:hover,
+		a:hover::before{
+			background-color: #2ecc71;
+		}
+
+		a:active,
+		a:active::before{
+			background-color: #2c3e50;
+			color: #2ecc71;
+			text-decoration: none;
+		}
+
+		/*No Bootstrap a pseudo classe :focus também pode ser customizada*/
+
+	</style>
+</head>
+<body>
+	<a href="#">DO IT</a>
+</body>
+</html>
