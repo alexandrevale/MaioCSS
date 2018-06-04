@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>29/30</title>
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+			background-color: #bdc3c7;
+		}
+
+		.container{
+			width: 90%;
+			margin: 50px auto;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: auto;
+			grid-template-areas: "text image";
+			background-color: #fff;
+		}
+
+		.item-text{
+			grid-area: text;
+			padding: 20px;
+		}
+
+		.item-img{
+			grid-area: image;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.item-img::after{
+			content: "";
+			position: absolute;
+			width: 60px;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-color: #fff;
+			transform: skewX(-10deg);
+			transform-origin: top left;
+		}
+
+		img{
+			max-width: 100%;
+			height: auto;    
+			margin: -5px;
+    		margin-left: 5px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item-text">
+			<h2>Lorem ipsum dolor sit amet</h2>
+			<p>Vel vitae aspernatur exercitationem quae, necessitatibus molestiae ipsum debitis, rerum molestias laudantium natus quam explicabo minima, ad cupiditate suscipit inventore ea! Corporis!</p>
+		</div>
+		<div class="item-img">
+			<img src="img/road.jpg" alt="">
+		</div>
+	</div>
+</body>
+</html>
