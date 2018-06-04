@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>30/30</title>
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+		}
+
+		.container{
+			display: grid;
+			justify-items: center;
+			align-items: end;
+			background-color: #fff;
+			border-bottom: 4px solid #34495E;
+			width: 75%;
+			height: 500px;
+			margin: 180px auto;
+		}
+
+		.item{
+			width: 180px;
+			height: 180px;
+			background-color: #0287D0;
+			border-radius: 50%;
+			animation: bounce 2s ease infinite;
+		}
+
+		@keyframes bounce{
+			0%   { transform: scale(1,1)    translateY(0); }
+	        10%  { transform: scale(1.1,.9) translateY(0); }
+	        30%  { transform: scale(.9,1.1) translateY(-100px); }
+	        50%  { transform: scale(1,1)    translateY(0); }
+	        57%  { transform: scale(1,1)    translateY(-7px); }
+	        64%  { transform: scale(1,1)    translateY(0); }
+	        100% { transform: scale(1,1)    translateY(0); }
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item"></div>
+	</div>
+</body>
+</html>
