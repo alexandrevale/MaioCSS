@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>13/30</title>
+	<style>
+		body{
+			font-size: 14px;
+			margin: 0;
+			padding: 0;
+			background-color: #0287D0;
+			display: grid;
+			grid-template-columns: 100%;
+			grid-template-rows: auto;
+		}
+
+		.container{
+			display: grid;
+			align-items: center;
+			grid-template-columns: 1fr 1fr;
+			grid-column-gap: 5px;
+			width: 100%;
+			height: 100vh;
+			background-color: #ddd;
+		}
+
+		.col{
+			background-color: #fff;
+			align-self: stretch;
+			margin: 1.5rem;
+			padding: 1.5rem;
+			border-radius: 1rem;
+			border-bottom: .25rem solid #ccc;
+		}
+
+		ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		li{
+			background-color: #ccc;
+			padding: .75rem 1rem;
+			border: 1px solid #aaa;
+			margin-bottom: -1px;
+		}
+
+		li:first-child{
+			border-top-left-radius: .5rem;
+			border-top-right-radius: .5rem;
+		}
+
+		li:last-child{
+			border-bottom-left-radius: .5rem;
+			border-bottom-right-radius: .5rem
+		}
+
+		li:nth-child(odd){
+			font-weight: 700;
+		}
+
+		li:nth-child(even){
+			background-color: #fff;
+		}
+
+		p:nth-child(2n+0){
+			background-color: yellow;
+			margin: 0 -2rem;
+			padding: 1rem;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="col">
+			<ul>
+				<li>Item 01</li>
+				<li>Item 02</li>
+				<li>Item 03</li>
+				<li>Item 04</li>
+				<li>Item 05</li>
+				<li>Item 06</li>
+				<li>Item 07</li>
+				<li>Item 08</li>
+				<li>Item 09</li>
+				<li>Item 10</li>
+				<li>Item 11</li>
+				<li>Item 12</li>			
+			</ul>
+		</div>
+		<div class="col">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem unde fugiat blanditiis ratione.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam optio magni reiciendis sunt praesentium ea temporibus eum dolorem sint, eius labore consectetur, debitis, quibusdam, rem aperiam pariatur voluptas sit nulla.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolorum molestias harum quam provident ipsam cumque itaque excepturi, voluptate nostrum dolor culpa eius adipisci, saepe odit quo, libero sint facere!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur ipsum nostrum, ut velit magni. Obcaecati totam voluptatem adipisci, nostrum nemo reprehenderit explicabo dicta provident impedit esse nam recusandae, cupiditate deserunt.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum possimus cumque perferendis velit, suscipit iste reiciendis natus, eum debitis facere, voluptatum excepturi sapiente? Dolorum voluptatibus maiores omnis, perferendis rem minima.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde vero voluptate quas, voluptatibus deserunt labore at dolores praesentium, tempora beatae ipsa, cupiditate laboriosam non totam. Ipsam vitae ab qui porro!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim blanditiis optio impedit ullam commodi. Illum error sequi, autem quidem, obcaecati ab maxime labore numquam libero veniam dolores nostrum fugit quas!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis doloribus repellat, omnis nisi ducimus, saepe facere rem culpa hic inventore suscipit dolore quaerat aspernatur explicabo adipisci iusto molestias ipsam nemo!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem maiores distinctio quaerat deleniti ex quia, excepturi, quasi placeat laborum fugit ipsam sunt inventore laboriosam minima veritatis eaque. Voluptates, expedita quo.</p>
+		</div>
+	</div>
+
+</body>
+</html>
