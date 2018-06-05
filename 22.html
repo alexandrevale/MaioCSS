@@ -37,27 +37,61 @@
 			content: counter(contador) " - ";
 		}
 
-		.exemplo2{
+		.exemplo2,
+		.exemplo3{
 			padding-left: 1.5rem;
 		}
 
-		.exemplo2 li{
+		.exemplo2 li,
+		.exemplo3 li{
 			padding-top: 2rem;
 			padding-bottom: 2rem;
 			border-left: 1px solid #ccc;
 			counter-increment: contador;
 		}
 
-		.exemplo2 li::before{
+		.exemplo3 li{
+			display: grid;
+			grid-template-columns: auto 1fr;
+			grid-template-rows: auto;
+			grid-template-areas: "icon panel";
+			align-items: start;
+		}
+
+		.exemplo2 li::before,
+		.exemplo3 li::before{
 			content: "0" counter(contador);
 			font-weight: 700;
 			background-color: #0287D0;
 			border-radius: 50%;
 			margin-left: -1.5rem;
-			margin-right: 2rem;
+			margin-right: 1.5rem;
 			color: #fff;
 			padding: 1rem;
-		}		
+		}
+
+		.exemplo3 li::before{
+			grid-area: icon;
+		}	
+
+		.panel{
+			border-radius: .5rem;
+			border: 1px solid #ccc;
+			box-shadow: 0 .2rem 0 #aaa;
+			grid-area: panel;
+		}
+
+		.panel-header{
+			border-bottom: 1px solid #ccc;
+			border-top-left-radius: .5rem;
+			border-top-right-radius: .5rem;
+			padding: 1rem;
+			background-color: #aaa;
+		}
+
+		.panel-body{
+			padding: 1rem;
+		}	
 
 	</style>
 </head>
@@ -77,5 +111,41 @@
 			<li>Item 03</li>
 		</ol>
 	</div>
+
+	<div class="container">
+		<ol class="exemplo3">
+			<li>
+				<div class="panel">
+					<div class="panel-header">
+						Título do item da lista
+					</div>
+					<div class="panel-body">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius voluptates et culpa commodi, ratione tempore hic aliquam delectus placeat necessitatibus laborum quas nemo, consectetur sed labore exercitationem porro perspiciatis minima.
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="panel">
+					<div class="panel-header">
+						Título do item da lista
+					</div>
+					<div class="panel-body">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius voluptates et culpa commodi, ratione tempore hic aliquam delectus placeat necessitatibus laborum quas nemo, consectetur sed labore exercitationem porro perspiciatis minima.
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="panel">
+					<div class="panel-header">
+						Título do item da lista
+					</div>
+					<div class="panel-body">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius voluptates et culpa commodi, ratione tempore hic aliquam delectus placeat necessitatibus laborum quas nemo, consectetur sed labore exercitationem porro perspiciatis minima.
+					</div>
+				</div>
+			</li>						
+		</ol>
+	</div>
+
 </body>
 </html>
