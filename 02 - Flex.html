@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>02/30 - Flex</title>
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+			font-size: 14px;
+		}
+
+		img{ 
+			width: 60%;
+			height: 100vh;
+			object-fit: cover;
+		}
+
+		.container{
+			display: flex;
+		}
+
+		.texto{
+			width: 40%;
+			height: 100vh;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img src="img/road.jpg" alt="">
+		<div class="texto">
+			<h1>Lorem Ipsum</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla aperiam tempore officia fugit et error quasi corrupti sunt voluptatum numquam soluta similique, reprehenderit praesentium consequuntur, ipsum quos esse repudiandae iusto.</p>
+			<a href="#">Clique aqui</a>
+		</div>
+	</div>
+</body>
+</html>
