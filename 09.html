@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>09/30</title>
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+			font-size: 14px;
+		}
+
+		.container{
+			display: grid;
+			align-items: center;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: auto;
+			grid-template-areas: 
+				"left right";
+			grid-row-gap: 5px;
+			grid-column-gap: 5px;
+			width: 100%;
+			height: 100vh;
+		}
+	
+		.exemplo1{
+			display: grid;
+			grid-area: left;
+			align-self: stretch;
+			background-image: radial-gradient(circle, #f1c40f, #e74c3c);
+		}
+
+		.exemplo2{
+			display: grid;
+			grid-area: right;
+			align-self: stretch;
+			background-image:radial-gradient(circle at top left, 
+				#727991 10%, 
+				#b1f7e3);
+		}
+
+		.btn{
+			place-self: center;
+			text-align: center;
+			color: #fff;
+			font-size: 3rem;
+			font-weight: 700;
+			text-decoration: none;
+			padding: 2rem;
+		}
+
+		.btn-1{
+			border: 10px solid #1abc9c;
+			transition: border-width .8s linear;
+		}
+
+		.btn-1:hover{
+			/*border: 15px solid #1abc9c;*/
+			border-width: 15px
+		}
+
+		.btn-2{
+			box-shadow: 0 0 0 10px #ecf0f1;
+			transition: box-shadow .8s linear;
+		}
+
+		.btn-2:hover{
+			box-shadow: 0 0 0 15px #ecf0f1;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="exemplo1">
+			<a href="#" class="btn btn-1">Teste 1</a>
+		</div>
+		<div class="exemplo2">
+			<a href="#" class="btn btn-2">Teste 2</a>
+		</div>
+	</div>
+</body>
+</html>
